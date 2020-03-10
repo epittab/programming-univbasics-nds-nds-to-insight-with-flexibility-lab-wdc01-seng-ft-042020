@@ -115,14 +115,12 @@ def movies_with_directors_set(source)
   
   i = 0 
   while (i < source.length) do
-  #  j = 0
-  #  while (j < source[i][:movies].length) do 
+ 
       dir_name = source[i][:name]
       movies_array = source[i][:movies]
-      #[j]
+    
       newArr = movies_with_director_key(dir_name, movies_array)
-   #   j += 1
-  #  end
+ 
     i += 1
   end
   return newArr
