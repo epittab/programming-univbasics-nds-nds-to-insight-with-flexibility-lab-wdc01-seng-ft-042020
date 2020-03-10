@@ -119,7 +119,7 @@ def movies_with_directors_set(source)
       dir_name = source[i][:name]
       movies_array = source[i][:movies]
     
-      newArr = movies_with_director_key(dir_name, movies_array)
+      newArr << movies_with_director_key(dir_name, movies_array)
  
     i += 1
   end
